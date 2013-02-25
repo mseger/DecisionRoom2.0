@@ -1,0 +1,88 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url('/images/white_brick_wall.png');
+}
+
+a {
+  color: #00B7FF;
+}
+
+/* LOGIN styles */
+
+#site-title{
+	margin-top: 50px;
+	color: #9D1309;
+}
+
+#login-submit{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+#marketing-pic{
+	width:500px;
+	border: 10px #9D1309;
+	border-radius: 10px;
+}
+
+/* ROOM_INDEX styles */
+
+#inhabitant-profPic{
+	width:50px;
+}
+
+#welcome-title{
+	color: #9D1309;
+	padding-bottom: 20px;
+}
+
+#create-room{
+	padding-top: 130px;
+}
+
+#room-list{
+	padding-top: 130px;
+}
+
+#logout-button{
+	margin-top: 10px;
+}
+
+#go-to-room-button{
+	margin-top: 10px;
+}
+
+/* ROOM styles */
+
+#welcome-room-title{
+	color: #9D1309;
+	padding-bottom: 20px;
+}
+
+#room-logout-button{
+	margin-top: 10px;
+	float:right;
+}
+
+#yelp-search-submit{
+	margin-left: 10px;
+}
+
+/* _YELP_RESULTS partial styles */
+
+#yelp-business-link{
+	margin-left: 10px;
+}
+
+#room-yelp-result{
+	margin-left: 5px;
+}
+
+/* ALL_SEARCH_RESULTS styles */
+
+#candidate-result-title{
+	color: #9D1309;
+}

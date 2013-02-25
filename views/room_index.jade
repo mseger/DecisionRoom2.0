@@ -1,0 +1,51 @@
+extends layout
+
+block content
+    
+    div.row
+        div.span4.offset1(value=curr_user, id="welcome-dialog")
+            h1(id="welcome-title") Welcome to TheDecisionRoom
+            img(src="#{curr_user.profPicURL}", id="profPic")
+            br
+            h4 #{curr_user.name}
+
+            form(name="logout-form", action="/logout", method="post")
+                button.btn(type="submit", id="logout-button")
+                    i.icon-cog
+                    |  Log out
+        
+        div.span5.offset1(id="room-list")
+            h2 Relevant Rooms to You
+            each room, i in rooms
+                div(value=room, id="room_id")
+                    h4 #{room.name}
+                    | Valid for #{room.clock} hours
+                    br
+                    each inhabitant, i in room.room_inhabitants
+                        img(src="#{inhabitant.profPicURL}", id="inhabitant-profPic")
+                    form(name="go-to-room", action="/room/" + room._id, method="get")
+                        button.btn(type="submit", id="go-to-room-button")
+                            i.icon-arrow-right
+                            |  Go to Room
+                    br
+                    br
+        
+        div.span4.offset1(id="create-room")
+            h2 Create a New Room
+            form(name="create-room-form", action="/room/new", method="post")
+                 | Room name
+                 br
+                 input(type="text", name="room_name")
+                 br
+                 | Valid for
+                 br
+                 input(type="text", name="valid_for")
+                 br
+                 | Locked Group 
+                 input(type="checkbox", name="locked")
+                 br
+                 br
+                 button.btn(type="submit")
+                    i.icon-plus
+                    |  Create new Room
+
