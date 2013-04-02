@@ -78,6 +78,12 @@ th{
 	color: #9D1309;
 }
 
+#table-room-name{
+  font-family: 'Give You Glory', cursive;
+  font-size: 20px;
+  color: #000000;
+}
+
 
 #logout-button{
 	margin-top: 10px;

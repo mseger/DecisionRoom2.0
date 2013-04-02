@@ -28,7 +28,7 @@ block content
                     each room, i in rooms
                         tr
                           td 1
-                          td #{room.name}
+                          td(id="table-room-name") #{room.name}
                           td 
                             each inhabitant, i in room.room_inhabitants
                                 img(src="#{inhabitant.profPicURL}", id="inhabitant-profPic")
