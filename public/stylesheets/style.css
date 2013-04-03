@@ -56,21 +56,29 @@ a {
 
 #welcome-title{
 	color: #9D1309;
-	padding-bottom: 20px;
 }
 
 #create-room{
-	padding-top: 130px;
+	margin-top: 130px;
 }
 
 #room-list{
-	padding-top: 130px;
+	margin-top: 130px;
 }
 
+#add-room-condensed{
+	margin-top: 80px;
+	text-align: right;
+}
+
+#profPic-navbar{
+	margin-right:5px;
+	width:30px;
+}
 /* room index table-related css */
 
 #room-list-table{
-	margin-top: 120px;
+	margin-top: 110px;
 }
 
 th{
